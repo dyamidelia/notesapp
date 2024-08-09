@@ -8,30 +8,48 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    document.title = 'My Page Title';
+    document.title = 'Dyami's Portfolio;
   }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+   <div>
+        <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+          <img src="viteLogo.png" className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+          <img src="reactLogo.png" className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Dyami's Portfolio</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <h2>About Me</h2>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Hi, I'm John Doe, a full-stack web developer with expertise in React, Vite, and modern web technologies. I specialize in building dynamic, responsive web applications that deliver exceptional user experiences.
+        </p>
+      </div>
+      <div className="card">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://project1.example.com" target="_blank" rel="noopener noreferrer">Project 1</a> - A brief description of Project 1.
+          </li>
+          <li>
+            <a href="https://project2.example.com" target="_blank" rel="noopener noreferrer">Project 2</a> - A brief description of Project 2.
+          </li>
+          <li>
+            <a href="https://project3.example.com" target="_blank" rel="noopener noreferrer">Project 3</a> - A brief description of Project 3.
+          </li>
+        </ul>
+      </div>
+      <div className="card">
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out to me through my <a href="mailto:john.doe@example.com">email</a> or connect with me on <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn more about the technologies I use.
       </p>
     </>
   )
