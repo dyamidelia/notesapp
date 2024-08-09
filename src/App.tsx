@@ -15,17 +15,17 @@ function App() {
     <>
    <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-          <img src="viteLogo.png" className="logo" alt="Vite logo" />
+           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src="reactLogo.png" className="logo react" alt="React logo" />
+           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Dyami's Portfolio</h1>
       <div className="card">
         <h2>About Me</h2>
         <p>
-          Hi, I'm John Doe, a full-stack web developer with expertise in React, Vite, and modern web technologies. I specialize in building dynamic, responsive web applications that deliver exceptional user experiences.
+          Hi, I'm Dyami, a full-stack web developer with expertise in React, Vite, and modern web technologies. I specialize in building dynamic, responsive web applications that deliver exceptional user experiences.
         </p>
       </div>
       <div className="card">
