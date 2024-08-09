@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <h1>Dyami Delia</h1>
-      <div className="card">
+      <div>
         <img src= "https://media.licdn.com/dms/image/D5635AQFN715BScpYFg/profile-framedphoto-shrink_400_400/0/1720821885215?e=1723831200&v=beta&t=XGqqUgviRNP5zLbxzaZgigp3wsdp5fFEfUKNAlj8A8o" className="logo react" alt="React logo" />
       
         <h2>About Me</h2>
@@ -100,7 +100,7 @@ function App() {
 
            <h2>Application Functionality and Cloud Infrastructure </h2>
 
-            <a href="https://project3.example.com" target="_blank" rel="noopener noreferrer">Project 3</a> - A brief description of Project 3.
+            Expirence Creating Backend Restful APIs in Spring Boot, Node, Flask, Django and using Docker hosting on AWS, Google Cloud, Heroku and Azure. 
 
         </ul>
       </div>
@@ -119,7 +119,7 @@ function App() {
         </a>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more about the technologies I use.
+        Click on the Vite and React logos to learn more about the technologies I used for this site.
       </p>
     </>
   )
