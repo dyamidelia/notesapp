@@ -8,24 +8,31 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className="intro">
-        <h1>Hello, I'm [Your Name]</h1>
-        <p>Welcome to my portfolio. I'm a web developer with expertise in React, Node.js, and more.</p>
+
+
+    
+ <div className="container">
+      <div>
+        <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+          <img src="vite-logo.png" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+          <img src="react-logo.png" className="logo" alt="React logo" />
+        </a>
       </div>
-      <div className="projects">
-        <h2>My Projects</h2>
-        <div className="project-list">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
+      <h1>My Portfolio</h1>
+      <div className="card">
+        <p>Welcome to my portfolio! Explore my projects and learn more about what I do.</p>
       </div>
-      <footer>
-        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      </footer>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </div>
+
+
+
     </>
-  );
+  )
 }
 
 export default App
