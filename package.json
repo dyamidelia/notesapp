@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^6.1.14",
     "aws-amplify": "^6.5.0",
+    "clipboard": "^2.0.11",
+    "copy-to-clipboard": "^3.3.3",
     "react": "^18.3.1",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.3.1",
+    "react-player": "^2.16.0",
     "recharts": "^2.12.7"
   },
   "devDependencies": {

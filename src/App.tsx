@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import reactLogo from './assets/react.svg'
+import DyamiImage from './assets/1720821885215.png'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {
@@ -13,6 +14,10 @@ import {
   CartesianGrid,
   Bar,
 } from "recharts"
+import ReactPlayer from 'react-player'
+import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
+import ItemCard from './ItemCard';
+
 
 function App() {
 
@@ -27,14 +32,26 @@ function App() {
     { name: "HTML", percent: 7 },
   ];
 
-
+ const customOverrides = {
+    image: {
+      src: {DyamiImage},
+      alt: "New description",
+    },
+    Button: {
+      children: "Buy Now",
+      onClick: () => alert("Button Clicked!"),
+    },
+    '$99 USD': {
+      childr: "$89 USD",
+    },
+  };
+    
 
   return (
     <>
       <h1>Dyami Delia</h1>
+      <img src={DyamiImage} className="logo react" style={{ width: '200px', height: '200px' }} alt="DyamiImage" />
       <div>
-        <img src= "https://media.licdn.com/dms/image/D5635AQFN715BScpYFg/profile-framedphoto-shrink_400_400/0/1720821885215?e=1723831200&v=beta&t=XGqqUgviRNP5zLbxzaZgigp3wsdp5fFEfUKNAlj8A8o" className="logo react" alt="React logo" />
-      
         <h2>About Me</h2>
         <p>
           Hi, I'm Dyami, a full-stack web developer with expertise in React, Vite, and modern web technologies. I specialize in building dynamic, responsive web applications that deliver exceptional user experiences.
@@ -102,6 +119,7 @@ function App() {
 
             Expirence Creating Backend Restful APIs in Spring Boot, Node, Flask, Django and using Docker hosting on AWS, Google Cloud, Heroku and Azure. 
 
+      
         </ul>
       </div>
       <div className="card">
@@ -110,6 +128,7 @@ function App() {
           Feel free to reach out to me through email at <a href="mailto:dyami.delia@gmaail.com">Dyami.Delia@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/hiredyami/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </p>
       </div>
+            
          <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
            <img src={viteLogo} className="logo" alt="Vite logo" />
