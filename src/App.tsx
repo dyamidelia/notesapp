@@ -116,10 +116,6 @@ function App() {
           Feel free to reach out to me through email at <a href="mailto:dyami.delia@gmaail.com">Dyami.Delia@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/hiredyami/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </p>
       </div>
-            <input id="foo" value="Dyami.Delia@gmail.com" />
-      <button class="btn" data-clipboard-target="#foo">
-        <img src="assets/1720821885215.png" alt="Copy to clipboard" />
-      </button>
          <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
            <img src={viteLogo} className="logo" alt="Vite logo" />
