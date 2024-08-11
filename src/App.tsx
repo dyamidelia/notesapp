@@ -14,7 +14,6 @@ import {
   CartesianGrid,
   Bar,
 } from "recharts"
-import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
 import ItemCard from './ui-components/ProductCard';
 import '@aws-amplify/ui-react/styles.css';
 
