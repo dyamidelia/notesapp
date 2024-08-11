@@ -28,7 +28,8 @@ export default function ProductCard(props) {
       alignSelf="stretch"
       position="relative"
       objectFit="cover"
-      alt="A view To Kill"
+      src="/src/assets/MyIcon.png"
+      alt=""
       {...getOverrideProps(overrides, "image")}
     />
     <Flex
@@ -71,6 +72,10 @@ export default function ProductCard(props) {
       >
         <Rating
           shrink="0"
+            value={2}
+            maxValue={5}
+            fillColor="hsl(300, 95%, 30%)"
+            emptyColor="hsl(210, 5%, 94%)"
           size="large"
           {...getOverrideProps(overrides, "Rating")}
         />
@@ -334,7 +339,7 @@ export default function ProductCard(props) {
             whiteSpace="pre-wrap"
             {...getOverrideProps(overrides, "Flirty")}
           >
-            Flirty
+            Templates
           </Text>
         </Flex>
       </Flex>

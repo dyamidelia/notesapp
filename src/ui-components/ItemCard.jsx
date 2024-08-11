@@ -24,9 +24,11 @@ export default function ItemCard(props) {
     {...rest}
   >
     <Badge
+      gap="0"
+      shrink="0"
       size="small"
-      variation="info"
-     
+      variation="success"
+      {...getOverrideProps(overrides, "Badge")}
     >
       New!
     </Badge>
@@ -94,7 +96,7 @@ export default function ItemCard(props) {
         whiteSpace="pre-wrap"
         {...getOverrideProps(overrides, "$99")}
       >
-        $79
+        $99
       </Text>
     </Flex>
   </Flex>

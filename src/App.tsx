@@ -14,9 +14,9 @@ import {
   CartesianGrid,
   Bar,
 } from "recharts"
-import ReactPlayer from 'react-player'
 import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
-import ItemCard from './ItemCard';
+import ItemCard from './ui-components/ProductCard';
+import '@aws-amplify/ui-react/styles.css';
 
 
 function App() {
@@ -102,8 +102,11 @@ function App() {
       </div>
 
     </div>
-          
+          <h2>Pixel Perfect Components with Figma</h2>
+                <ItemCard/>
+
           <h2>Git Based Code Control</h2>
+
           <p>
           Proficient in using a Git-based workflow for managing code, including branching, merging, and conducting peer reviews. 
           <br />
@@ -119,7 +122,6 @@ function App() {
 
             Expirence Creating Backend Restful APIs in Spring Boot, Node, Flask, Django and using Docker hosting on AWS, Google Cloud, Heroku and Azure. 
 
-      
         </ul>
       </div>
       <div className="card">
@@ -128,7 +130,10 @@ function App() {
           Feel free to reach out to me through email at <a href="mailto:dyami.delia@gmaail.com">Dyami.Delia@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/hiredyami/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </p>
       </div>
-            
+            <input id="foo" value="Dyami.Delia@gmail.com" />
+      <button class="btn" data-clipboard-target="#foo">
+        <img src="assets/1720821885215.png" alt="Copy to clipboard" />
+      </button>
          <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
            <img src={viteLogo} className="logo" alt="Vite logo" />
