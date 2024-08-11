@@ -32,20 +32,6 @@ function App() {
     { name: "HTML", percent: 7 },
   ];
 
- const customOverrides = {
-    image: {
-      src: {DyamiImage},
-      alt: "New description",
-    },
-    Button: {
-      children: "Buy Now",
-      onClick: () => alert("Button Clicked!"),
-    },
-    '$99 USD': {
-      childr: "$89 USD",
-    },
-  };
-    
 
   return (
     <>
